@@ -6,8 +6,8 @@
 }
 
 .mobile-app {
-    width: 415px;
-    height: 780px;
+    width: 100vw;
+    height: 100vh;
     background-color: #ff6392;
     display: flex;
     justify-content: center;
