@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" class="css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>SPLITHEBILL</title>
+  </head>
+  <body>
+    <div class="mobile-app">  
+
+         <div class="content-app">
+
+          <label for="total">Total of the bill
+          <input type="number" name="Total" id="total" />
+        </label>
+
+          <label for="tip">Tip (%)
+          <input type="number" name="Tip" id="tip" />
+        </label>
+
+        <label id="people">How many people</label>
+        <div id="btnContainer">
+            <button id="decreaseBtn" class="buttons"> - </button>
+            <div id="counterLabel">0</div>
+            <button id="increaseBtn" class="buttons"> + </button>
+
+        </div>
+        
+        <input id="split" type="button" value="Split for me" />
+        </div>
+      </div>
+    </div>
+
+<script>
+
+const billAmount = document.getElementById('total')
+const customTip = document.getElementById('tip')
+const generateBillBtn = document.getElementById('split')
+const descreaseBtn = document.getElementById('decreaseBtn')
+const counterLabel = document.getElementById('counterLabel') // number of people //
+const increaseBtn = document.getElementById('increaseBtn')
+let count = 0;
+
+increaseBtn.onclick = function() {
+    count++;
+    counterLabel.innerHTML = count;
+}
+
+descreaseBtn.onclick = function() {
+    count--;
+    counterLabel.innerHTML = count;
+}
+
+generateBillBtn.addEventListener("click", () => {
+  const billAmount = parseInt(total.value)
+  const customTip = parseInt(tip.value)
+  const counter2 = parseInt(counterLabel.textContent)
+
+  const amountTip = billAmount * (customTip / 100)
+  const totalBill = billAmount + amountTip
+  const splitPerson = totalBill / counter2
+
+
+  alert(`Total per person: ${splitPerson}`)
+
+});
+
+
+
+
+</script>
+
+
+</body>
+</html>

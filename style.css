@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+.mobile-app {
+    width: 415px;
+    height: 780px;
+    background-color: #ff6392;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-app {
+    width: 350px;
+    height: 500px;
+    padding: 60px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    box-shadow:6px -3px 0px 3px #ffe45e;
+}
+
+
+label {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0px;
+    color: #ff6392;
+}
+
+input[type=number] {
+	width: 12em;
+    height: 30px;
+	border: .1em solid #ff6392;
+	border-radius: 8px;
+	text-align: center;
+	color: #ff6392;
+    display: flex;
+    margin: 8px 0px;
+	appearance: textfield;
+}
+
+#btnContainer{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons {
+    width: 55px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #5aa9e6;
+    border: 0;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#counterLabel{
+    height: 45px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#split {
+    margin-top: 40px;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: #ff6392;
+    box-shadow: 5px -2px 0px 1px #ffe45e;
+}
